@@ -5,12 +5,15 @@ import authRoutes from "./routes/auth.routes.js"
 import messageRoutes from "./routes/message.routes.js"
 import userRoutes from "./routes/user.routes.js"
 import connectDb from "./db/connectDb.js"
+
+
 const app = express();
 
 dotenv.config();
 
 app.use(express.json());// to parse incoming requests with json payloads (from req.body)
 app.use(cookieParser());
+
 
 const PORT = process.env.PORT || 5000;
 
