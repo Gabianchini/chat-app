@@ -1,10 +1,12 @@
 import { useState } from "react";
 import {toast} from "react-hot-toast";
+import { useAuthContext } from "../../context/AuthContext";
 
 
 
 const useSignup = () => {
     const [loading, setLoading] = useState(false);
+    const {authUser, setAuthUser} = useAuthContext()
 
     const signup = async ({ fullName, username, password, confirmPassword, gender }) => {
         const success = handleInputErrors({ fullName, username, password, confirmPassword, gender });
@@ -22,6 +24,13 @@ const useSignup = () => {
             if (data.error) {
                 throw new Error(data.error);
             }
+            
+            //localstorage
+            localStorage.setItem("chat-user", JSON.stringify(data));
+            
+            //context
+            setAuthUser(data);
+
             // Handle successful signup
         } catch (error) {
             toast.error(error.message);
@@ -46,8 +55,8 @@ function handleInputErrors({ fullName, username, password, confirmPassword, gend
 		toast.error("Passwords do not match");
     }
 
-	if (password.length < 3) {
-		toast.error("Password must be at least 6 characters");
+	if (password.length < 5) {
+		toast.error("Password must be at least 5 characters");
     }
 
 	return true;
