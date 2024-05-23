@@ -7,7 +7,7 @@ import { TiMessages } from "react-icons/ti";
 
 
 const MessageContainer = () => {
-	const {selectedConversation, setSelectedConversation} = useConversation
+	const {selectedConversation, setSelectedConversation} = useConversation()
 	
 	useEffect(()=> {
 		//cleanup function to stop selecting the conversation
