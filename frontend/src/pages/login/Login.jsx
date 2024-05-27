@@ -14,34 +14,34 @@ const Login = () => {
     }
   return (
     <div className='flex flex-col items-center justify-center min-w-96 mx-auto'>
-        <div className='w-full p-6 rounded-lg shadow-md bg-gray-400 bg-clip-padding backdrop-filter backblur-blur-lg bg-opacity-0'>
-            <h1 className='text-3xl font-semibold text-center text-gray-300'>
+        <div className='w-full p-6 rounded-lg shadow-md bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-1'>
+            <h1 className='text-3xl font-bold text-center text-black'>
                 Login
-                <span className='text-blue-500'>Chat</span>
+                <span className='text-blue-900'> ChatApp</span>
             </h1>
 
             <form onSubmit={handleSubmit}>
                 <div>
                     <label className='label p-2'>
-                        <span className='text-base label-text'>Username</span>
+                        <span className='text-base tracking-wide text-black font-bold  label-text'>Username</span>
                     </label>
-                    <input type="text" placeholder='Enter username' className='w-full input input-bordered h-10'
+                    <input type="text" placeholder='Enter username' className='w-full tracking-wide placeholder-gray-500 input border border-black h-10'
                     value={username}
                     onChange={(e) => setUsername(e.target.value)} 
                     />
                 </div>
                 <div>
                     <label className='label'>
-                        <span className='text-base label-text'>Password</span>
+                        <span className='text-base tracking-wide  text-black font-bold text-whitelabel-text'>Password</span>
                     </label>
-                    <input type="password" placeholder='Enter password' className='w-full input input-bordered h-10'
+                    <input type="password" placeholder='Enter password' className='w-full  placeholder-gray-500 tracking-wide  input border border-black  h-10'
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}  />
                 </div>
-                <Link to="/signup" className='text-sm hover:underline hover:text-blue-600 mt-2 inline-block'>
+                <Link to="/signup" className='text-sm text-white hover:underline hover:text-blue-300 mt-2 inline-block'>
                     {"Don't"} have an account?
                 </Link>
-                <button className='btn btn-block btn-sm mt-2'
+                <button className= 'btn btn-block btn-sm mt-2 border bg-black text-white border-white'
                 disabled={loading}>
                     {loading ? <span className='loading loading-spinner'></span> : "Login" }
                 </button>
