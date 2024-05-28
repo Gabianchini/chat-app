@@ -44,13 +44,15 @@ NODE_ENV=...
 ``
 PORT= 5000
 ``
-- MONGO_DB_URI: Create a mongo database and paste the URI address. You will find this information in the [mongodb site](https://www.mongodb.com/). Access tou project folder -> Overview -> Clusters -> Connect -> MongoDB for VsCode -> Paste connection string in .env.The connection string should like this:
+- MONGO_DB_URI: Create a mongo database and paste the URI address. You will find this information in the [mongodb site](https://www.mongodb.com/).<br>
+  Access your project folder -> Overview -> Clusters -> Connect -> MongoDB for VsCode -> Paste connection string in env file.<br>
+  The connection string should follow this format:
   ``
   mongodb://username:password@cluster01.example.com:27017/mydatabase
   ``
    <br>
 - JWT_SECRET: To generate a jwt secret create a long good password. (Example: 8Zz5tw0Ionm3XPZZfN0NOml3z9FMfmpgXwovR9fp6ryDIoGRM8EPHAB6iHsc0fb ( dont use this one for - security reasons) )<br>
-- The NODE_ENV values indicates if the project is in development mode or production, use the values "development" or "production" here.<br>
+- The NODE_ENV values indicates if the project is in development mode(running locally) or production(deployed), use the values "development" or "production" here.<br>
 <br>
 
 - **Build the project:**
