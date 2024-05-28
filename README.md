@@ -73,5 +73,33 @@ Example:
 ```
 http://localhost:5000/
 ```
+
+## Take a look in the  project:
+
+  **Register and Login Page:**
   
+  <img src="https://github.com/Gabianchini/chat-app/blob/main/register-login.gif" width="550px" alt="Register and Login page">
+<br>
+
+ **Conversation in Real time:**
+ 
+ <img src="https://github.com/Gabianchini/chat-app/blob/main/conversation.gif" width="550px" alt="Conversation in real time feature">
+ <br>
+
+ **Search for user and Logout**:
+
+  <img src="https://github.com/Gabianchini/chat-app/blob/main/search-logout.gif" width="550px" alt="Search for user and Logout feature">
+
+<br>
+
+## Documentations:
+- [Socket.io](https://socket.io/docs/v4/tutorial/introduction)]
+- [ReactHot Toast](https://react-hot-toast.com/)
+- [TailwindCSS](https://tailwindcss.com/docs/installation)
+- [Vite](https://vitejs.dev/guide/)
+- [DaisyUI](https://daisyui.com/docs/install/)
+- [Zustand](https://docs.pmnd.rs/zustand/getting-started/introduction)
+- [Express](https://expressjs.com/pt-br/)
+- [Mongoose](https://mongoosejs.com/docs/guide.html)
+- [Guide](https://www.youtube.com/watch?v=HwCqsOis894&t=741s)
 
