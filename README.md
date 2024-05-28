@@ -28,3 +28,48 @@ Chat App is a real-time messaging application that allows users to create accoun
 - **See Online Users:** Users can see who is currently online.
 - **Search for Users:** Users can search for other users to start a conversation.
 - **Real-time Messaging:** Users can send and receive messages instantly, enabling real-time
+
+## Run Project:
+
+- **Setup env file:**
+```
+PORT=...
+MONGO_DB_URI=...
+JWT_SECRET=...
+NODE_ENV=...
+```
+
+**Notes about this step:** <br>
+- PORT: The port indicates which port the project is gonna run locally.Example:
+``
+PORT= 5000
+``
+- MONGO_DB_URI: Create a mongo database and paste the URI address. You will find this information in the [mongodb site](https://www.mongodb.com/). Access tou project folder -> Overview -> Clusters -> Connect -> MongoDB for VsCode -> Paste connection string in .env.The connection string should like this:
+  ``
+  mongodb://username:password@cluster01.example.com:27017/mydatabase
+  ``
+   <br>
+- JWT_SECRET: To generate a jwt secret create a long good password. (Example: 8Zz5tw0Ionm3XPZZfN0NOml3z9FMfmpgXwovR9fp6ryDIoGRM8EPHAB6iHsc0fb ( dont use this one for - security reasons) )<br>
+- The NODE_ENV values indicates if the project is in development mode or production, use the values "development" or "production" here.<br>
+<br>
+
+- **Build the project:**
+```
+npm run build
+```
+<br>
+
+- **Start the app:**
+```
+npm start
+```
+<br>
+
+- **Access the project address choosed in the env file( PORT value ) :**
+
+Example:
+```
+http://localhost:5000/
+```
+  
+
