@@ -1,6 +1,7 @@
 import jwt from "jsonwebtoken";
 import User from "../models/user.model.js";
 
+//This middleware check if user is authenticated
 const protectRoute = async (req, res, next) => {
     try {
         const token = req.cookies.jwt;
